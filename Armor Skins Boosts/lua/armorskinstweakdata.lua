@@ -4,7 +4,7 @@ Hooks:Add("LocalizationManagerPostInit", "ArmorBoosts_loc", function(loc)
 	local _INFO = {
 		["armor_skins_boost_dodge"] = "- Dodge +%d%%",
 		["armor_skins_boost_concealment"] = "- Concealment +%d",
-		["armor_skins_boost_movement"] = "- Movement +%d",
+		["armor_skins_boost_movement"] = "- Movement +%d%%",
 		["armor_skins_boost_armor"] = "- Armor +%d",
 		["armor_skins_boost_stamina"] = "- Stamina +%d%%",
 		["armor_skins_boost_damage_shake"] = "- Shake +%d%%"
