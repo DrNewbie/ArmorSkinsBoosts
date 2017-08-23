@@ -8,7 +8,7 @@ Hooks:Add("LocalizationManagerPostInit", "ArmorBoosts_loc", function(loc)
 		["armor_skins_boost_armor"] = "- Armor +%s",
 		["armor_skins_boost_stamina"] = "- Stamina +%s%%",
 		["armor_skins_boost_damage_shake"] = "- Shake +%s%%",
-		["armor_skins_boost_armor_regen"] = "- Armor Regen -%s%%"
+		["armor_skins_boost_armor_regen"] = "- Armor Regen +%s%%"
 	}
 	local _DESC_VAULE_FIX = {
 		dodge = 100,
