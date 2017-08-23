@@ -12,7 +12,7 @@ Hooks:Add("LocalizationManagerPostInit", "ArmorBoosts_loc", function(loc)
 	local _DESC_VAULE_FIX = {
 		dodge = 100,
 		concealment = 1,
-		movement = 1,
+		movement = 100,
 		armor = 1,
 		stamina = 100,
 		damage_shake = 100
