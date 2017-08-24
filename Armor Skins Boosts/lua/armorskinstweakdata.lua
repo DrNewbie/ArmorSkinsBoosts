@@ -26,7 +26,7 @@ Hooks:Add("LocalizationManagerPostInit", "ArmorBoosts_loc", function(loc)
 				_desc_data = _desc_data .. "\n(".. loc:text("bm_armor_level_" .. i) ..")" 
 				for mod_name, mod_data in pairs(skins_datas.body_armor) do
 					if skins_datas.body_armor[mod_name] then
-						_desc_data = _desc_data .. " - " ..string.format(tostring(_INFO["armor_skins_boost_" .. mod_name]), tostring(math.round(mod_data[i]*(_DESC_VAULE_FIX[mod_name] or 1))))
+						_desc_data = _desc_data .. " - " ..string.format(tostring(_INFO["armor_skins_boost_" .. mod_name]), tostring(math.round(mod_data["level_" .. i]*(_DESC_VAULE_FIX[mod_name] or 1))))
 					end
 				end
 				_desc_data = _desc_data .. "\n"
