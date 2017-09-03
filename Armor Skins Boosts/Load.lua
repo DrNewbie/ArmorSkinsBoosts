@@ -17,8 +17,14 @@ function Load_ArmorSkinsBoosts()
 end
 
 
-function Get_Current_ArmorSkinsBoosts()
-	return tweak_data.economy.armor_skins[tostring(managers.blackmarket:equipped_armor_skin())] or {}
+function Get_Current_ArmorSkinsBoosts(cat)
+	local equipped_armor = managers.blackmarket:equipped_armor() or "level_1"
+	local armor_skins_data = tweak_data.economy.armor_skins[tostring(managers.blackmarket:equipped_armor_skin())] or {}
+	local ADD_NUM = 0
+	if armor_skins_data and armor_skins_data.body_armor and armor_skins_data.body_armor[cat] then
+		ADD_NUM = armor_skins_data.body_armor[cat][equipped_armor] or 0
+	end
+	return ADD_NUM
 end
 
 Load_ArmorSkinsBoosts()

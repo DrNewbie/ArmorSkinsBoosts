@@ -1,9 +1,9 @@
 {
 	"name": "-- [Armor Skins Boosts] --",
-	"description": " ",
+	"description": "-- [Armor Skins Boosts] --",
 	"author": "Dr_Newbie",
 	"contact": " ",
-	"version": "15",
+	"version": "16",
 	"priority": 1,
 	"libraries": [
 		{
@@ -33,6 +33,10 @@
 		{
 			"hook_id": "lib/units/beings/player/playerdamage",
 			"script_path": "lua/playerdamage.lua"
+		},
+		{
+			"hook_id": "lib/managers/blackmarketmanager",
+			"script_path": "lua/blackmarketmanager.lua"
 		}
 	]
 }
